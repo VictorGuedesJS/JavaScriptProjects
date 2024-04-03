@@ -3,8 +3,7 @@
 function createrow(nomeTarefa){
 
     const tr = createElement("tr")
-    cons
-
+    const td = createElement("td", nomeTarefa)
 }
 
 document.getElementById("adicionar").addEventListener("click",function(){
