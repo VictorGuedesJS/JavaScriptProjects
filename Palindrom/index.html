@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromo</title>
+</head>
+<body>
+
+    <div class="Cotainer">
+
+        <h3>Verificar Palindromo</h3>
+
+
+        <form action="#" method="post" id="meuFormulario">
+            
+            <label for="texto">Escreva a palavra: </label>
+            <input type="text" name="texto" id="texto">
+            <button type="submit">Verificar</button>
+        </form>
+
+    </div>
+    
+    
+</body>
+
+<script>
+
+
+function verificarPalindromo(palavra){
+
+    let palavraInvertida = "";
+
+    for (let i = palavra.length - 1; i>=0; i-- ){
+
+        palavraInvertida += palavra [i];
+    }
+
+    if (palavra == palavraInvertida){
+
+        alert(palavra + " é um palindromo")
+
+    }else{
+
+        alert(palavra + " não é um Palindromo \n\n" + palavra + " é diferente de " + palavraInvertida)
+
+    }
+
+
+}
+
+
+document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+  // Evita o envio padrão do formulário
+  event.preventDefault();
+
+  // Pega o valor do campo de entrada
+  var meuDado = document.getElementById("texto").value;
+
+    verificarPalindromo(meuDado);
+    location.reload();
+
+});
+
+
+
+
+
+</script>
+
+</html>
