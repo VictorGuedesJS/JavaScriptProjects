@@ -1,0 +1,23 @@
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilo das células da tabela */
+  td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilo das células do cabeçalho */
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo de hover para linhas */
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  

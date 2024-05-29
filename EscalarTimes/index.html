@@ -4,33 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escalar Time</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 <h1>Escalação do time</h1>  
 
-    <ol class="Escalação">
-        
-    </ol>
+    <table id="minhaTabela">
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Nome</th>
+                <th>Número</th>
+            </tr>
+        </thead>
+        <tbody id="escalação">
+            
+        </tbody>
+
+    </table>
 
 <h3>Quer escalar alguem pro Time?</h3>
 
- <form action="">
-
-    <label for="posicaoJogador">Posiçao do Jogador</label>
-    <input type="text" class="posicaoJogador" name="posicaoJogador">
-    <label for="nomeJogador">Nome do Jogador</label>
-    <input type="text" class="nomeJogador" name="nomeJogador">
-    <label for="numeroJogador">Número do Jogador</label>
-    <input type="text" class="numeroJogador" name="posicaoJogador">
-
-
-
- </form>
+    <label for="posicaoJogador">Posiçao do Jogador: </label>
+    <input type="text" id="posicaoJogador" name="posicaoJogador">
+    <br>
+    <label for="nomeJogador">Nome do Jogador: </label>
+    <input type="text" id="nomeJogador" name="nomeJogador">
+    <br>
+    <label for="numeroJogador">Número do Jogador: </label>
+    <input type="text" id="numeroJogador" name="posicaoJogador">
+    <br>
+    <button id="button" onclick= AdicionarJogador(event)>Escalar</button>
 
 
+<div>
 
+    <h3>Quer Remover alguem da escalação?</h3>
 
+    <label for="numeroJogador">Número do Jogador: </label>
+    <input type="text" id="numeroJogador1" name="posicaoJogador">
+    <br>
+    <button id="button" onclick= RemoverJogador(event)>Escalar</button>
 
+</div>
+    
+ <script src="app.js"></script>
 </body>
+
+
+
 </html>
